@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #906798;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  font-family: "Indie Flower", cursive;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  background-color: #6f9867;
+  width: 595px;
+  height: 990px;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 1.25rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  font-family: "Indie Flower", cursive;
+  background-color: #906798;
+  color: white;
+  border: 1px solid #906798;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #9067989a;
+}
+
+.task-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 2.25rem;
+  opacity: 0;
+}
+
+.task {
+  margin-top: 1rem;
+  width: 45%;
+}
+
+span {
+  font-size: 2.65rem;
+}
+
+.animation-task {
+  animation: an-task 2s linear forwards;
+}
+
+@keyframes an-task {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Prilikom printanja ne pokazuje ružni footer and header*/
+@page {
+  size: auto;
+  margin: 0mm;
+}
